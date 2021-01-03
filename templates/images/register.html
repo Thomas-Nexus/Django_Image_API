@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<style>
+    .blue_btn {
+	width: 15%;
+	background: #0cebdc !important;
+	color: black !important;
+	}
+</style>
+
+<body style="color:white">
+</br>
+</br>
+</br>
+</br>
+<center>
+</br>
+<h2> REGISTER </h2>
+</br>
+</br>
+    <p style="color:#0cebdc"> Please register and create an account to upload images. </p>
+</br>
+
+    {% for X in messages %}
+    <p class="d-flex justify-content-center" id="messages" style="color:green"> {{ X }} </p>
+    {% endfor %}
+
+    <div align="center">
+            <div class="box-element" id="form-wrapper">
+                <div class="form-group">
+                    <form class="site-form" method="POST" style="color:white">
+                        <table>
+                        {% csrf_token %}
+                        <div> {{ form|crispy }} </div>
+                        </br>
+                        </table>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+				 				<input class="btn blue_btn" type="submit" value="Register">
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                    </form>
+                </div>
+            </div>
+        </div>
+</center>
+</body>
+{% endblock %}

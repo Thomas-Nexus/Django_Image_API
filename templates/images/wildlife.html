@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body style="color:white">
+</br>
+</br>
+</br>
+</br>
+<center>
+</br>
+<h2> GALLERY - WILDLIFE </h2>
+</br>
+</br>
+<div class="container" style="color:black">
+    <div class="py-5">
+        <div class="row">
+            {% for X in image %}
+            {% if X in three %}
+             <div class="col-md-4">
+                    <div class="card mb-1 shadow mb-3 bg-white rounded">
+                        <img class="card-img-top" src="{{ X.image.url }}">
+                        <div class="card-body d-flex justify-content-between">
+                            <p><b>{{ X.title }}</b> | #{{ X.id }}</p>
+
+                            <a href = "{% url 'images:likes_w' X.pk %}"> {{ X.likes }}
+                                <img src="{% static 'images/Heart.png' %}" width="18">
+                            </a>
+
+                            <p><a href="http://127.0.0.1:8000/api/id/{{ X.id }}" style="color:green"> VIEW </a></p>
+                        </div>
+                    </div>
+             </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</center>
+</body>
+{% endblock %}

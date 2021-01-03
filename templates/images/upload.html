@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<style>
+    .blue_btn {
+	width: 15%;
+	background: #0cebdc !important;
+	color: black !important;
+	}
+</style>
+
+<body style="color:white">
+</br>
+</br>
+</br>
+</br>
+<center>
+</br>
+<h2> UPLOAD IMAGE </h2>
+</br>
+</br>
+    <p style="color:white"> Please complete all fields to successfully upload an image to the gallery. </p>
+</br>
+
+    <div align="center">
+            <div class="box-element" id="form-wrapper">
+                <div class="form-group">
+                    <form method="POST" enctype="multipart/form-data" id="form" style="color:#0cebdc">
+                        {% csrf_token %}
+                        <div> Title  {{ form.title }} {{ form.category }}</div>
+                        </br>
+                        <div> Upload (Only JPG Format Supported)        {{ form.image }} </div>
+                        </br>
+                        </br>
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <input class="btn blue_btn" type="submit" value="Upload">
+                        </div>
+                        </br>
+                        </br>
+                         {% for X in messages %}
+					     <p class="d-flex justify-content-center" id="messages" style="color:green"> {{ X }} </p>
+						{% endfor %}
+                    </form>
+                </div>
+            </div>
+        </div>
+</center>
+</body>
+{% endblock %}
