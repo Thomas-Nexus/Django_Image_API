@@ -35,3 +35,6 @@ An Image API Django Site Utilising the REST Framework.
 
 ![Slide1](https://user-images.githubusercontent.com/72507931/103502923-b370e980-4e4a-11eb-85ba-e4fee10c185f.JPG)
 
+![Slide1](https://user-images.githubusercontent.com/72507931/103503059-0fd40900-4e4b-11eb-8da0-6f302cc0cae2.JPG)
+
+
