@@ -1,7 +1,6 @@
 # Django_Image_API
 
-Cross-Asset Class Price Data Dashboard Django site utilising the Yahoo Finance API with Chart.JS
-
+An Image API Django Site Utilising the REST Framework.
 
 ## Setup
 
@@ -10,28 +9,27 @@ Cross-Asset Class Price Data Dashboard Django site utilising the Yahoo Finance A
 
 ## Technologies
 
-
 ## Languages/Packages
 
-- Python 3.8.3
-- Django 3.1.3
-- Rest Framework
-- Crispy Forms
-- Bootstrap
-- HTML5
-- CSS
+    - Python 3.8.3
+    - Django 3.1.3
+    - Rest Framework
+    - Crispy Forms
+    - Bootstrap
+    - HTML5
+    - CSS
 
 ## Editor:
 
-- PyCharm/Command
-- Command Line
+    - PyCharm/Command
+    - Command Line
 
 ## User Features
 
-- View daily closing price action for 7 asset classes in the financial markets.
-- View line graphs in 2 time formats (previous 30 days & 240 days)
-- View asset class performance for both time periods
-- Charts will dynamically update to display the most recent price data.
+    - Up-vote any image in the gallery
+    - View image gallery by category, most popular and most recently added
+    - Register an account, login, logout
+    - Upload images to the gallery (when registered)
 
 ## Example Screenshots
 
