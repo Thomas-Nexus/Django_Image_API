@@ -7,8 +7,6 @@ An Image API Django Site Utilising the REST Framework.
     - Runserver on port 8000 - http://127.0.0.1:8000/
     - python manage.py runserver
 
-## Technologies
-
 ## Languages/Packages
 
     - Python 3.8.3
